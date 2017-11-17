@@ -1,0 +1,25 @@
+Group gHouse
+
+Group gRoom_Bedroom							<group>		    (gHouse)
+Group gRoom_Livingroom						<group>	    	(gHouse)
+Group gRoom_Kitchen							<group> 		(gHouse)
+Group gRoom_Bathroom						<group>		    (gHouse)
+
+Group:Switch:OR(ON,OFF) gLights				<light>		    (gHouse)
+Group:Switch:OR(ON,OFF) gLights_Bedroom		<light>	    	(gLights,gRoom_Bedroom)
+Group:Switch:OR(ON,OFF) gLights_Livingroom	<light> 		(gLights,gRoom_Livingroom)
+Group:Switch:OR(ON,OFF) gLights_Kitchen		<light>		    (gLights,gRoom_Kitchen)
+Group:Switch:OR(ON,OFF) gLights_Bathroom	<light>	    	(gLights,gRoom_Bathroom)
+Group:Switch:OR(ON,OFF) gLights_Closet		<light> 		(gLights)
+Group:Switch:OR(ON,OFF) gLights_Entry		<light>	    	(gLights)
+Group:Switch:OR(ON,OFF) gLights_Balcony		<light>	    	(gLights)
+
+Group gScenes								<group>	    	(gHouse)
+Group gScene_Movies							<projector> 	(gScenes)
+Group gScene_Art							<light>	    	(gScenes)
+Group gScene_Bed							<bed>	    	(gScenes)
+Group gScene_Normal							<light>	    	(gScenes)
+
+Group gTemps                                <temperature>   (gHouse)
+Group gThermostats                          <temperature>   (gTemps)
+Group gTemperaturesActual                   <temperature>   (gTemps)

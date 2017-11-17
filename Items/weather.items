@@ -1,0 +1,7 @@
+String  Weather_Condition_Home				"Condition [%s]"			<fog>				(Weather) {weather="locationId=home, type=condition, property=commonId"}
+String  Weather_Formatted_Condition_Home	"[MAP(en_weather.map):%s]"	<fog> 				(Weather) {weather="locationId=home, type=condition, property=commonId"}
+Number  Weather_Temp_Home					"Temperature [%.1f °F]"		<temperature>	 	(Weather) {weather="locationId=home, type=temperature, property=feel"}
+
+String  Weather_Condition_DEN				"Condition [%s]" 			<fog>				(Weather) {weather="locationId=lodo, type=condition, property=commonId"}
+String  Weather_Formatted_Condition_DEN		"[MAP(en_weather.map):%s]"	<fog>				(Weather) {weather="locationId=lodo, type=condition, property=commonId"}
+Number  Weather_Temp_DEN					"Temperature [%.1f °F]"		<temperature>		(Weather) {weather="locationId=lodo, type=temperature, property=feel"}
